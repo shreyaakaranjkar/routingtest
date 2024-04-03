@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-6 offset-2">
+        <h3 class="bg-primary p-3 text-white">Product Info Card</h3>
+        <div class="card">
+            <div class="card-body">
+                <h4>Product name : {{productObj.pName}} </h4> 
+                <hr>
+                <h4>Product Status : {{productObj.pStatus}}</h4> 
+            </div>
+        </div>
+        <button class="btn btn-outline-success" [routerLink]="['edit']"
+        [queryParamsHandling]="'preserve'">Edit Product</button>
+    </div>
+</div>

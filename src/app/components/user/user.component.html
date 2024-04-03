@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="userCard p-4">User Personal Info Card</h4>
+                <h4>Welcome {{userObj.userName}}!!</h4>
+                <h4>User Name : {{userObj.userName}}</h4>
+                <hr>
+                
+                <h5>User Image : </h5>
+                <img [src]="userObj.userImg" alt="" height="200" width="200">
+            </div>
+            <button class="btn btn-outline-info"
+            [routerLink]="['/users',userObj.userId,'edit']" [queryParamsHandling]="'preserve'">Edit User</button>
+        </div>
+    </div>
+</div>
