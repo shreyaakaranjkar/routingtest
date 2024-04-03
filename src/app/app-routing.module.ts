@@ -7,6 +7,7 @@ import { UserComponent } from './components/user/user.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { ProductComponent } from './components/product/product.component';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
+import { PnfComponent } from './components/pnf/pnf.component';
 
 const routes: Routes = [
   {
@@ -47,8 +48,17 @@ const routes: Routes = [
         path : ':productId/edit',
         component : EditProductComponent
       }
-    ]
-  }
+    ],
+  },
+    {
+      path : '**',
+      redirectTo : 'pnf'
+    },
+    {
+      path:'pnf',
+      component : PnfComponent
+    }
+  
 ];
 
 @NgModule({

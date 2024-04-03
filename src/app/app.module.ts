@@ -13,6 +13,7 @@ import { ProductComponent } from './components/product/product.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditProductComponent } from './components/edit-product/edit-product.component';
+import { PnfComponent } from './components/pnf/pnf.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
     UserComponent,
     ProductComponent,
     EditUserComponent,
-    EditProductComponent
+    EditProductComponent,
+    PnfComponent
   ],
   imports: [
     BrowserModule,
